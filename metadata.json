@@ -1,0 +1,11 @@
+{
+  "name": "Agri Mitra AI",
+  "description": "Multilingual AI farming assistant providing crop disease \u0026 pest diagnosis, voice assistance, irrigation \u0026 soil health guidance, and actionable treatment plans across Indian languages.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

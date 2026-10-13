@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Global Mobile-First Responsive & Anti-Distortion Rules */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f9;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Prevent image and media distortion / flex blowouts on mobile */
+img, video, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Smooth Touch and Mobile Scroll */
+@media (max-width: 640px) {
+  button, input, select, textarea {
+    font-size: 14px;
+  }
+}
